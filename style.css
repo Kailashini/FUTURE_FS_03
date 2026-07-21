@@ -1,0 +1,550 @@
+/* =========================
+   GOOGLE FONT & RESET
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8f8f8;
+    color:#333;
+    line-height:1.6;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+/* =========================
+   COMMON
+========================= */
+
+.title{
+    text-align:center;
+    font-size:2.5rem;
+    color:#8b0000;
+    margin-bottom:50px;
+    font-weight:700;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    background:#ff9800;
+    color:white;
+    border-radius:30px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#8b0000;
+    transform:translateY(-3px);
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:#8b0000;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+.navbar{
+
+    width:90%;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 0;
+
+}
+
+.logo{
+
+    color:#fff;
+    font-size:28px;
+    font-weight:700;
+
+}
+
+.nav-links{
+
+    display:flex;
+    gap:30px;
+
+}
+
+.nav-links a{
+
+    color:white;
+    font-weight:500;
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#ffd54f;
+
+}
+
+/* =========================
+   HOME
+========================= */
+
+#home{
+
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("images/restaurant.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.hero{
+
+    max-width:700px;
+
+}
+
+.hero h1{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+    margin-bottom:35px;
+
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+#about{
+
+    padding:100px 8%;
+
+    background:white;
+
+}
+
+.about-container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:50px;
+
+    flex-wrap:wrap;
+
+}
+
+.about-image{
+
+    flex:1;
+
+}
+
+.about-image img{
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.about-text{
+
+    flex:1;
+
+}
+
+.about-text h3{
+
+    color:#8b0000;
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+}
+
+.about-text p{
+
+    margin-bottom:18px;
+
+    font-size:17px;
+
+}
+
+/* =========================
+   MENU
+========================= */
+
+#menu{
+
+    padding:100px 8%;
+
+    background:#fff8f0;
+
+}
+
+.menu-container{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.menu-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+}
+
+.menu-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.menu-card img{
+
+    height:220px;
+
+    width:100%;
+
+    object-fit:cover;
+
+}
+
+.menu-card h3{
+
+    padding:18px 20px 10px;
+
+    color:#8b0000;
+
+}
+
+.menu-card p{
+
+    padding:0 20px 20px;
+
+    font-size:22px;
+
+    color:#ff9800;
+
+    font-weight:700;
+
+}
+/* =========================
+   GALLERY
+========================= */
+
+#gallery{
+    padding:100px 8%;
+    background:#ffffff;
+}
+
+.gallery-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery-container img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:0.4s;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.gallery-container img:hover{
+    transform:scale(1.05);
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+#features{
+    padding:100px 8%;
+    background:#fff8f0;
+}
+
+.feature-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.feature-card{
+    background:#fff;
+    padding:30px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+    transition:.3s;
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+}
+
+.feature-card i{
+    font-size:45px;
+    color:#ff9800;
+    margin-bottom:20px;
+}
+
+.feature-card h3{
+    color:#8b0000;
+    margin-bottom:15px;
+}
+
+/* =========================
+   REVIEWS
+========================= */
+
+#reviews{
+    padding:100px 8%;
+    background:#ffffff;
+}
+
+.review-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.review-card{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.review-card:hover{
+    transform:translateY(-10px);
+}
+
+.review-card h3{
+    color:#ff9800;
+    margin-bottom:15px;
+}
+
+.review-card h4{
+    margin-top:20px;
+    color:#8b0000;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact{
+    padding:100px 8%;
+    background:#fff8f0;
+}
+
+form{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+form input,
+form textarea{
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+}
+
+form input:focus,
+form textarea:focus{
+    border-color:#ff9800;
+}
+
+form button{
+    border:none;
+    cursor:pointer;
+}
+
+/* =========================
+   LOCATION
+========================= */
+
+#location{
+    padding:100px 8%;
+    background:#ffffff;
+}
+
+.map iframe{
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#8b0000;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+footer h2{
+    margin-bottom:15px;
+}
+
+footer p{
+    margin:10px 0;
+}
+
+.social-icons{
+    margin:20px 0;
+}
+
+.social-icons a{
+    color:white;
+    font-size:24px;
+    margin:0 10px;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    color:#ffd54f;
+}
+
+.copyright{
+    margin-top:20px;
+    font-size:14px;
+}
+
+/* =========================
+   WHATSAPP BUTTON
+========================= */
+
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+    transition:.3s;
+}
+
+.whatsapp:hover{
+    transform:scale(1.1);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .about-container{
+        flex-direction:column;
+    }
+
+    .title{
+        font-size:2rem;
+    }
+}
